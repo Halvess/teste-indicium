@@ -1,12 +1,7 @@
-
-
-
-
-
 var i=0;
 function showContent(id){
     var element = document.getElementById(id);
-    if (element.style.display === "none"){
+    if (element.style.display === "none" || element.style.display === ""){
         element.style.animationName = "fade";
         element.style.animationDirection = "normal";
         element.style.display = "block";

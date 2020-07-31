@@ -375,20 +375,24 @@ p{
     }
     h3{
         font-size: 56pt;
-        margin-left:10%;
+        margin-left:25%;
         margin-bottom: 30px;
     }
     .button-slide-problem{
-        width: 100px;
-        height: 100px;
-        font-size:34pt;
-        border-width: 3pt;
-        margin: 10px 10px 10px 10px;
+        width: 75px;
+        height: 75px;
+        font-size:18pt;
+        border-width: 2pt;
+        margin: 30px 10px 10px 10px;
+    }
+    .button-slide-problem:hover{
+        background: var(--light-blue);
+        color: white;
     }
     .texto-paragrafo{
-        font-size:24pt;
-        margin-left: 10%;
-        margin-right: 10%;
+        font-size:18pt;
+        margin-left: 25%;
+        margin-right: 20%;
     }
     .slider-problema{
         margin-top:30px;
@@ -397,52 +401,64 @@ p{
     .slide-problema{
         position:relative;
     }
+    .slide-problema .texto-paragrafo{
+        margin:0;
+    }
     #img-problema-1{
         position: relative;
-        padding-right: 25%;
-        padding-left: 25%;
+        padding-right: 33%;
+        padding-left: 33%;
         padding-top: 10%;
     }
     #img-problema-2{
         position: relative;
-        padding-right: 25%;
-        padding-left: 25%;
+        padding-right: 33%;
+        padding-left: 33%;
     }
     #img-problema-3{
         position: relative;
-        padding-right: 25%;
-        padding-left: 25%;
+        padding-right: 33%;
+        padding-left: 33%;
     }
     .img-slide{
-        width: 45vw;
+        width: 30vw;
         margin-bottom: 50px;
     }
     #cinco-porques{
         height: fit-content;
     }
     .img-menu{
-        width: 40vw;
+        width: 20vw;
     }
     #txt-cinco-porques{
-        transform: translateY(-280px);
-        font-size: 64pt;
+        transform: translateY(-170px);
+        font-size: 45pt;
     }
     #ishikawa{
         height: fit-content;
     }
     #txt-ishikawa{
-        transform: translateY(-180px);
-        font-size: 46pt;
+        transform: translateY(-195px);
+        font-size: 36pt;
     }
     #fluxograma{
         height:fit-content;
     }
     #txt-fluxogramas{
-        transform: translateY(-160px);
-        font-size: 46pt;
+        transform: translateY(-150px);
+        font-size: 36pt;
+    }
+    h4{
+        z-index: -1;
+    }
+    #ishikawa img{
+        width: 40vw;
+    }
+    #fluxograma img{
+        width: 40vw;
     }
     h5{
-        margin-left:10%;
+        margin-left:25%;
     }
     .img-conteudo-ishikawa{
         width: 50vw;
@@ -475,6 +491,23 @@ p{
         margin-right: auto;
         margin-top:20px;
         margin-bottom:10px;
+    }
+    .slide-problema::-webkit-scrollbar {
+        width:5px;
+        height:5px;
+    }
+    .slide-problema::-webkit-scrollbar-track {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 20px;
+        background-color: #42e8e083;
+    }
+    .slide-problema::-webkit-scrollbar-thumb {
+        background: var(--dark-blue);
+        border-radius: 10px;
+    }
+    .slide-problema::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(rgba(38, 0, 255, 0.575), green, blue, alpha);
     }
 }
 
