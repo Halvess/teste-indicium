@@ -1,0 +1,522 @@
+:root{
+    --dark-blue: #24126a;
+    --light-blue: #42e8e0;
+}
+strong{
+    color: var(--dark-blue)
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+hr{
+    margin: 0px 30% 0px 30%;
+    border-width: 3pt;
+    border-style: solid;
+    border-top: none;
+    border-color: var(--light-blue);
+}
+a{
+    text-decoration-style: none;
+    text-decoration: none;
+}
+#top-logo{
+    width: 60%;
+    transform:translateY(90px);
+    height: auto;
+    margin:0px;
+    padding: 0px;
+}
+nav{
+    position: relative;
+    top:20%;
+    margin-left: 25px;
+}
+header{
+    margin:0px;
+    padding: 0px;
+    background-color: var(--light-blue);
+    height: 100vh;
+    width: 100vw;
+    background:cover;
+}
+footer{
+    margin-top:50px;
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--dark-blue);
+    text-align: center;
+}
+
+#txt-footer{
+    color: white;
+    font-size: 10pt;
+}
+#logo{
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.social-media{
+    width: 30px;
+    height: 30px;
+    margin-left:2px;
+    margin-right:2px;
+    margin-top: 5px;;
+    margin-bottom:45px;
+}
+h1{
+    position: relative;
+    top: 20%;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 40pt;
+    color: white;
+}
+h2{
+    color: var(--dark-blue);
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20pt;
+    margin-bottom: 15px;
+
+}
+h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 34pt;
+    color: var(--dark-blue);
+}
+h3 span { 
+    margin-top: 5pt;      
+    display: block; 
+  }
+
+h4{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 28pt;
+    color: var(--light-blue);
+    text-align: center;
+    width: 100%;
+}
+
+h5{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 30pt;
+    color: var(--light-blue);
+}
+
+#txt-cinco-porques{
+    transform: translateY(-130px);
+    font-size: 34pt;
+}
+#txt-ishikawa{
+    transform: translateY(-115px);
+}
+#txt-fluxogramas{
+    transform: translateY(-75px);
+}
+
+
+p{
+    font-family: Raleway;
+    font-weight: 400;
+}
+
+.slider-problema{
+    width: 100vw;
+    overflow: hidden;
+    text-align: left;
+}
+.slide-problema{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+.slide-problema > div {
+    scroll-snap-align: start;
+}
+
+.slider-ishikawa{
+    width: 100vw;
+    overflow: hidden;
+    text-align: left;
+}
+.slide-ishikawa{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+.slide-ishikawa > div {
+    scroll-snap-align: start;
+}
+
+.img-conteudo-ishikawa{
+    margin: 0px 40px 0px 40px;
+    width: 80vw;
+    height: auto;
+    position: relative;
+}
+
+#img-problema-1{
+    padding-top:20%;
+}
+#img-problema-3{
+    margin-bottom:25px;
+}
+
+.button-slide-problem{
+    font-family: Raleway;
+    font-size: 18pt;
+    font-weight: 600;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: solid;
+    border-color: var(--light-blue);
+    border-width: 1pt;
+    color: var(--light-blue);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    outline-style: hidden;
+}
+
+.button-slide-problem:active{
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color:white;
+}
+
+.texto-paragrafo{
+    display: block;
+    margin: 0px 30px 10px 30px;
+    font-size: 14pt;
+}
+
+
+
+.img-slide{
+    margin: 20px 40px 30px 40px;
+    width: 80vw;
+    height: auto;
+    position: relative;
+}
+.img-menu{
+    margin: 10px auto 10px auto;
+    width: 50vw;
+    height: auto;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.menu-tecnicas{
+    border-color: var(--light-blue);
+    margin-top: 20px;
+    margin-bottom: 10px ;
+    margin-left:auto;
+    margin-right:auto;
+    width: 75vw;
+    height: fit-content;
+    text-align: center;
+}
+
+#conteudo-cinco-porques{
+    animation-name:fade;
+    display:none;
+    animation-duration: 1s;
+}
+#conteudo-ishikawa{
+    animation-name:fade;
+    display:none;
+    animation-duration: 1s;
+}
+#conteudo-fluxograma{
+    animation-name:fade;
+    display:none;
+    animation-duration: 1s;
+}
+
+#download-pdf{
+    text-align: center;
+    border: solid;
+    border-radius: 15px;
+    border-width: 1.5pt;
+    border-color: var(--light-blue);
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#download-pdf:hover{
+    animation-name: fade-background;
+    animation-duration: 0.6s;
+    animation-direction: normal;
+}
+
+#txt-download{
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#img-pdf{
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 50%;
+    height: auto;
+}
+
+
+.img-conteudo-fluxograma{
+    display: block;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+#cinco-porques{
+    height: 190px;
+}
+#ishikawa{
+    height: 130px;
+}
+
+#fluxograma{
+    height: 100px;
+}
+
+#fluxograma-img-4{
+    width: 60vw;
+    height: 50vh;
+}
+
+
+/* ------------------------------------ ANIMATIONS */
+@keyframes light-to-dark{
+    from{color:--light-blue;}
+    to{color:--dark-blue;}
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes fade-background{
+    from{background-color: white;}
+    to{background-color: var(--light-blue);}
+}
+
+
+@keyframes reverse-fade{
+    from{opacity:1;}
+    to{opacity:0;}
+}
+
+@keyframes dark-to-light{
+    from{color:--dark-blue;}
+    to{color:--light-blue;}
+}
+
+
+@media screen and (max-width: 1366px){
+    h1{
+        top:15%;
+        margin-left: 25%;
+        text-align: left;
+        font-size:64pt;
+        }
+    nav{
+        margin-left: 25%;
+    }
+    h2{
+        font-size: 30pt;
+    }
+    section{
+        width: 100vw;
+    }
+    h3{
+        font-size: 56pt;
+        margin-left:10%;
+        margin-bottom: 30px;
+    }
+    .button-slide-problem{
+        width: 100px;
+        height: 100px;
+        font-size:34pt;
+        border-width: 3pt;
+        margin: 10px 10px 10px 10px;
+    }
+    .texto-paragrafo{
+        font-size:24pt;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .slider-problema{
+        margin-top:30px;
+        position: relative;
+    }
+    .slide-problema{
+        position:relative;
+    }
+    #img-problema-1{
+        position: relative;
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-top: 10%;
+    }
+    #img-problema-2{
+        position: relative;
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    #img-problema-3{
+        position: relative;
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    .img-slide{
+        width: 45vw;
+        margin-bottom: 50px;
+    }
+    #cinco-porques{
+        height: fit-content;
+    }
+    .img-menu{
+        width: 40vw;
+    }
+    #txt-cinco-porques{
+        transform: translateY(-280px);
+        font-size: 64pt;
+    }
+    #ishikawa{
+        height: fit-content;
+    }
+    #txt-ishikawa{
+        transform: translateY(-180px);
+        font-size: 46pt;
+    }
+    #fluxograma{
+        height:fit-content;
+    }
+    #txt-fluxogramas{
+        transform: translateY(-160px);
+        font-size: 46pt;
+    }
+    h5{
+        margin-left:10%;
+    }
+    .img-conteudo-ishikawa{
+        width: 50vw;
+        height: auto;
+        position: relative;
+    }
+    #slide-ishikawa-1, #slide-ishikawa-2,
+    #slide-ishikawa-3, #slide-ishikawa-4 {
+        padding-left: 25%;
+        padding-right:25%;
+        height:fit-content;
+    }
+    .img-conteudo-ishikawa{
+        padding-top:5%;
+        padding-bottom: 5%;
+    }
+    .img-conteudo-fluxograma{
+        width: 60vw;
+        height:auto;
+        margin-top:50px;
+        margin-bottom: 20px;
+    }
+    #fluxograma-img-4{
+        width: 20vw;
+        height: 80vh;
+    }
+    #logo{
+        width: 10vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:20px;
+        margin-bottom:10px;
+    }
+}
+
+/* --------------------------------------------- FONTS */
+@font-face{
+    font-family: Raleway;
+    src:url(../fonts/Raleway-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: Raleway;
+    src:url(../fonts/Raleway-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Raleway;
+    src:url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Raleway;
+    src:url(../fonts/Raleway-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Raleway;
+    src:url(../fonts/Raleway-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Raleway;
+    src:url(../fonts/Raleway-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}

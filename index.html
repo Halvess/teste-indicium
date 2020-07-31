@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicium Academy - Raciocínio Analítico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>como resolver<br> problemas</h1>
+        <nav>
+            <a href="#sobre-problemas"><h2>Sobre problemas</h2></a>
+            <a href="#tecnicas"><h2>Técnicas</h2></a>
+            <a href="#treinamento"><h2>Treinamento</h2></a>
+            <a href="#material-apoio"><h2>Material de Apoio</h2></a>
+        </nav>
+    </header>
+        <section>
+            <h3 ><span id="sobre-problemas">&nbsp;</span> 
+                SOBRE<br>PROBLEMAS</h3>
+            <div class="slider-problema">    
+                <div class="slide-problema">
+                    <div id="img-problema-1">
+                        <img class="img-slide" alt="imagem explicando o tópico" src="imgs/teste-1@3x.png">
+                        <p class ="texto-paragrafo">
+                            Quando nos vemos diante de um problema ou situação, instintivamente tendemos a acreditar que sua solução ou a razão do mesmo é direta e linear.</p>
+                        </p>
+                    </div>
+                    <div id="img-problema-2">
+                        <img class="img-slide" alt="imagem explicando o tópico" src="imgs/teste-2@3x.png">
+                        <p class ="texto-paragrafo">
+                            Mas na maioria das vezes os problemas são uma sucessão de eventos, onde um ou mais deles geram a situação em questão.</p>
+                        </p>
+                    </div>
+                    <div id="img-problema-3">
+                        <img class="img-slide" alt="imagem explicando o tópico" src="imgs/teste-3@3x.png">
+                        <p class ="texto-paragrafo">
+                            Ter ciência deste fato é muito importante, pois evita que tomemos uma única situação ou evento como causa, fazendo com que somente a consequência imediata seja resolvida, e não a raíz do problema em questão.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div style="text-align: center;">
+                    <a class="button-slide-problem" href="#img-problema-1">1</a>
+                    <a class="button-slide-problem" href="#img-problema-2">2</a>
+                    <a class="button-slide-problem" href="#img-problema-3">3</a>
+                </div>
+            </div>
+        </section>
+ 
+        <section>
+            <h3><span id="tecnicas">&nbsp;</span>TÉCNICAS</h3>
+            <p class="texto-paragrafo">
+                Serão aqui apresentadas três técnicas para detecção da causa 
+                raíz de <br>um problema. Clique (ou toque) em uma das técnicas abaixo para a descrição detalhada e exemplificada da mesma.
+                Para manter a coesão, todas serão baseadas no exemplo hipotético a seguir: <br> <br>
+                <strong>Um produto lançado pela empresa mostrou um mau desempenho no mercado.</strong><br><br>
+                As técnicas mostrarão como chegar a raíz deste problema hipotético de diferentes maneiras, porém todas
+                irão seguir a mesma linha de pensamento, mostrando as diferentes maneiras de se chegar a um mesmo resultado.
+            </p>
+            <div class="menu-tecnicas" id="cinco-porques" onclick="showContent('conteudo-cinco-porques')">
+                <img class="img-menu" alt="ilustração cinco porquês" src="imgs/img-cinco-porques@3x.png">
+                <h4 id="txt-cinco-porques">5 porquês</h4>
+            </div>
+            <div id = "conteudo-cinco-porques">
+                <p class="texto-paragrafo">
+                    Criada na década de 30 pelo fundador da Toyota, Sakichi Toyoda, 
+                    a técnica dos cinco porquês é de certa maneira ingênua, mas muito efetiva. 
+                    Ela consiste em perguntar o porquê de algum problema acontecer cinco vezes. 
+                    Embora o criador descreva que cinco vezes é o ideal, o problema pode ser encontrado 
+                    com menos ou mais questionamentos, dependendo sempre do contexto e 
+                    da complexidade do problema.
+                </p>
+                <h5>exemplo</h5>
+                <p class="texto-paragrafo">
+                    Imagine que um produto lançado por sua empresa não teve uma boa perfomance. 
+                    Aplicando o método dos cinco porquês:<br> <br>
+                </p>
+                <p class="texto-paragrafo">
+                    <strong>1. Por que o produto não performou bem?</strong><br>
+                    De acordo com a pesquisa realizada após o lançamento, 
+                    notou-se que as pessoas não estavam dispostas a pagar o 
+                    preço pelo produto.<br> <br>
+
+                    <strong>2. Por que o produto estava fora da faixa de preço adequada?</strong><br>
+                    Ao consultar com a equipe de manufatura e produção, 
+                    constou-se que o preço de produção e o preço de venda 
+                    estava de acordo com os padrões do mercado, 
+                    sendo competitivo na faixa de preço.<br> <br>
+
+                    <strong>3. Por que mesmo com o preço competitivo as pessoas não quiseram adquirir o produto?</strong><br>
+                    Retornando a pesquisa após o lançamento, 
+                    foi notado que as pessoas que responderam a pesquisa 
+                    possuam renda média incompatível com o valor do qual 
+                    o produto foi projetado para ser lançado.<br> <br>
+
+                    <strong>4. Por que a renda média dos que responderam era diferente do planejado?</strong><br>
+                    Consultando o setor de marketing, percebeu-se que o veículo por onde o produto 
+                    foi lançado não visava o público-alvo para o qual o produto foi projetado.<br> <br>
+
+                    <strong>5. Por que o produto foi lançado no veículo errado?</strong><br>
+                    Ainda com o setor de marketing, percebeu-se que houve um erro durante a 
+                    pesquisa de mercado que apontou para a utilização 
+                    dos veículos de venda diferentes dos projetados, 
+                    ocasionando o problema.<br> <br>
+                </p>
+            </div>
+            <div id="ishikawa" class="menu-tecnicas" onclick="showContent('conteudo-ishikawa')">
+                <img class="img-menu" src="imgs/img-ishikawa@3x.png">
+                <h4 id="txt-ishikawa">Diagrama de Ishikawa</h4>
+            </div>
+            <div id = "conteudo-ishikawa">
+                <p class="texto-paragrafo">
+                    Também conhecido como diagrama da espinha de peixe, 
+                    o diagrama de Ishikawa foi criano nos anos 60 por Kaoru Ishikawa. 
+                    Sua construção é feita colocando o problema numa linha central e todas as 
+                    suas consequências ou causas como ramos dessa linha, imitando a espinha de um peixe. 
+                    <br>Este diagrama, além de proporciar uma visão gráfica do problema, 
+                    também permite uma visão maior do contexto em que ele se situa, favorecendo 
+                    a identificação das causas e consequências, permitindo assim resolvê-las.
+                </p>
+                <h5>exemplo</h5>
+                <p class="texto-paragrafo">
+                   Construindo o diagrama de Ishikawa baseado no exemplo descrito no início deste conteúdo:<br> <br>
+                </p>
+                <div class ="slider-ishikawa">
+                    <div class="slide-ishikawa">
+                        <div id ="slide-ishikawa-1">
+                            <p class="texto-paragrafo">
+                                <strong>1. Desenhe o problema na linha central</strong><br><br>
+                            </p>
+                                <img class = "img-conteudo-ishikawa" 
+                                alt ="primeiro passo do diagrama de Ishikawa" src="imgs/img-ishikawa-1@3x.png">
+                                <br><br>
+                        </div>
+                        <div id ="slide-ishikawa-2">
+                            <p class="texto-paragrafo">
+                                <strong>2. Pesquise e inclua áreas que se relacionam ao problema.</strong><br><br>
+                            </p>
+                                <img class = "img-conteudo-ishikawa" 
+                                alt ="segundo passo do diagrama de Ishikawa" src="imgs/img-ishikawa-2@3x.png">
+                                <br><br>
+                        </div>
+                        <div id ="slide-ishikawa-3">
+                            <p class="texto-paragrafo">
+                                <strong>3. Agora inclua as análises realizadas para cada parte.</strong><br><br>
+                            </p>
+                                <img class = "img-conteudo-ishikawa" 
+                                alt ="terceiro passo do diagrama de Ishikawa" src="imgs/img-ishikawa-3@3x.png">
+                                <br><br>
+                        </div>
+                        <div id ="slide-ishikawa-4">
+                            <p class="texto-paragrafo">
+                                <strong>4. Identifique as relações e as causas.</strong><br><br>
+                            </p>
+                                <img class = "img-conteudo-ishikawa" 
+                                alt ="quarto passo do diagrama de Ishikawa" src="imgs/img-ishikawa-4@3x.png">
+                                <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a class="button-slide-problem" href="#slide-ishikawa-1">1</a>
+                    <a class="button-slide-problem" href="#slide-ishikawa-2">2</a>
+                    <a class="button-slide-problem" href="#slide-ishikawa-3">3</a>
+                    <a class="button-slide-problem" href="#slide-ishikawa-4">4</a>
+                </div>
+               <br>
+                <p class="texto-paragrafo">
+                    O diagrama de Ishikawa permitiu perceber que as reclamações feitas na pesquisa 
+                    pós-venda estavam relacionadas com um erro do time de marketing em definir o ponto 
+                    de venda adequado para o produto. Também percebeu-se que os times de criação e produção 
+                    seguiram os requisitos do projeto e não foi necessário desprender tempo e recursos para 
+                    avaliar estas áreas.<br><br>
+
+                    É importante perceber que este exemplo tem como foco mostrar o processo envolvido. 
+                    Na maioria das vezes a inclusão e a análise das áreas relacionadas ao problema acontecem 
+                    simultâneamente, e as relações entre as áreas evolvidas com o problema podem ser maiores
+                    ou menores, dependendo da complexidade do produto ou do projeto desenvolvido.
+                </p>
+            </div>
+            <div id="fluxograma" class="menu-tecnicas" onclick="showContent('conteudo-fluxograma')">
+                <img class="img-menu" src="imgs/img-fluxograma@3x.png">
+                <h4 id="txt-fluxogramas">Fluxogramas</h4>
+            </div>
+            <div id = "conteudo-fluxograma">
+                <p class="texto-paragrafo">
+                    Fluxograma é uma ferramenta que consiste em 
+                    criar o caminho lógico para descrever o processo analítico de maneira gráfica.
+                    A sua linearidade e a descontrução do problema em partes menores facilita na 
+                    visualização do caminho entre a causa, a consequência e o problema, faciliando a tomada de decisões.
+                </p>
+                <h5>exemplo</h5>
+                <p class="texto-paragrafo">
+                   O fluxograma para a situação hipotética descrita no início desde conteúdo pode
+                   ser feito da seguinte maneira:<br> <br>
+                </p>
+                <img class = "img-conteudo-fluxograma" 
+                alt ="fluxograma completo" src="imgs/img-conteudo-fluxograma@3x.png">
+                <br><br>
+                <p class="texto-paragrafo">
+                    É importante salientar que um fluxograma precisa ser coerente para poder ser 
+                    facilmente analisado. <br>Aplicar alguns dos princípios a seguir podem ajudar a 
+                    tornar o fluxograma mais compreensível: <br><br>
+                </p>
+                <p class="texto-paragrafo">
+                    <strong>1. Agrupe elementos semelhantes com formas semelhantes.</strong><br>
+                </p>
+                <img class = "img-conteudo-fluxograma" 
+                alt ="fluxograma completo" src="imgs/img-conteudo-fluxograma-2@3x.png">
+                <br>
+                <p class="texto-paragrafo">
+                    Note que neste exemplo as perguntas estão sempre em retângulos com bordas arrendondadas, 
+                    enquanto as respostas estão sempre localizadas em retângulos de bordas pontiagudas. <br><br>
+                </p>
+                <p class="texto-paragrafo">
+                    <strong>2. Destacar elementos importantes.</strong><br>
+                </p>
+                <img class = "img-conteudo-fluxograma" 
+                alt ="fluxograma completo" src="imgs/img-conteudo-fluxograma-3@3x.png">
+                <br>
+                <p class="texto-paragrafo">
+                    Alguns fluxogramas tendem a ser extensos e cheios de formas, por isso destacar 
+                    elementos como o problema principal e pontos importantes podem facilitar 
+                    a localização das partes principais do fluxo. <br><br>
+                </p> 
+                <p class="texto-paragrafo">
+                    <strong>3. Separar em blocos, ou segmentos.</strong><br>
+                </p>
+                <img id = "fluxograma-img-4" class = "img-conteudo-fluxograma" 
+                alt ="fluxograma completo" src="imgs/img-conteudo-fluxograma-4@3x.png">
+                <br>
+                <p class="texto-paragrafo">
+                    Repare que no exemplo existe um bloco para tratar os eventos referentes aos 
+                    eventos ocorridos fora da produção e os ocorridos dentro da produção. 
+                    Separar em blocos facilita a visualização e favorece a identificação dos setores 
+                    influentes no fluxo do problema. Neste exemplo, fez-se uso da espessura da borda 
+                    para identificar o bloco da parte de fora da produção. <br><br>
+                </p>               
+        </div>
+    </section>
+        <section>
+            <h3><span id="treinamento"></span>TREINAMENTO</h3>
+            <p class="texto-paragrafo">
+               Não existem segredos na aplicação destas técnicas, mas treiná-las auxilia
+               significativamente na sua eficácia, pois facilita descobrir quais pontos
+               são cruciais na detecção do problema. <br><br>
+               Embora simples, estas atividades irão ajudá-lo a dominar as técnicas e aplicá-las em
+               qualquer âmbito de sua vida. As atividades são:<br><br>
+
+               <strong>1. Encontre algum problema do seu cotidiano que você gostaria de resolver,
+                   como por exemplo "Eu gostaria de ir para a academia depois do trabalho, mas toda vez
+                   que o expediente termina acabo indo para casa.". Utilize um fluxograma para traçar o caminho
+                   dos eventos que levam até o problema, e proponha para si uma solução para a causa encontrada.
+                   Caso não queira aplicar a si mesmo, pergunte a alguém ou use o exemplo dado acima como referência.
+               </strong><br><br>
+                <strong>2. Procure no seu meio profissional um problema simples, porém recorrente, 
+                    como por exemplo "Sempre me esqueço de checar ou responder emails do trabalho".
+                    Para este exercício recomenda-se o uso da técnica dos 5 porquês, mas é de sua livre
+                    escolha qual método usar. 
+                </strong><br><br>
+                <strong>3. Pergunte a um colega de trabalho algum problema recorrente que ocorre
+                    com a equipe, como por exemplo "Muitas pessoas se esquecem de confirmar
+                    as reuniões na agenda". Através do diagrama de Ishikawa, tentem encontrar juntos
+                    a causa deste problema e proponham uma solução para o mesmo. 
+                </strong>
+                <br><br>
+            </p>         
+        </section>
+    <section>
+        <h3><span id="material-apoio"></span>MATERIAL DE APOIO</h3>
+        <p class="texto-paragrafo">
+            Aqui você encontra um PDF com todo o conteúdo desde treinamento para poder visualizar offline 
+            ou salvar em seu computador.<br><br>
+        </p>
+        <div id="download-pdf">
+            <a href ="downloads/Indicium Academy - Resolução de Problemas.pdf" download>
+            <img id = "img-pdf" src = "imgs/pdf-icon.svg" alt ="ícone PDF para download"></a>
+        </div>
+        <p id ="txt-download" class="texto-paragrafo">Indicium Academy - <br>Resolução de Problemas.pdf</p>
+    </section>
+    <footer>
+        <img id = "logo" src="imgs/indicium-spacing.png" alt ="logo Indicium">
+        <p id ="txt-footer" class ="texto-paragrafo">
+            &reg; Indicium 2020 - <br>Todos os direitos reservados
+        </p>
+        <div style="text-align: center;">
+            <a href="https://www.facebook.com/indiciumtech/" target="_blank">
+                <img class="social-media" src="imgs/facebook.svg" alt="facebook link">
+            </a>
+            <a href="https://twitter.com/indicium_tech" target="_blank">
+                <img class="social-media" src="imgs/twitter.svg" alt="facebook link">
+            </a>
+            <a href="https://www.instagram.com/indiciumtech/" target="_blank">
+                <img class="social-media" src="imgs/instagram.svg" alt="facebook link">
+            </a>
+            <a href="https://www.linkedin.com/company/indiciumtech" target="_blank">
+                <img class="social-media" src="imgs/linkedin.svg" alt="facebook link">
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
