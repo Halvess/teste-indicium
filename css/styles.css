@@ -22,7 +22,8 @@ video{
     margin-top:25px;
     width: 100vw;
     padding-left: 25px;
-    padding-right: 25px;;
+    padding-right: 25px;
+    outline:none;
 }
 
 hr{
@@ -62,6 +63,9 @@ footer{
     height: fit-content;
     background-color: var(--dark-blue);
     text-align: center;
+}
+section{
+    margin-bottom: 50px;
 }
 
 #txt-footer{
@@ -348,8 +352,8 @@ p{
 }
 
 .slide-problema::-webkit-scrollbar , .slide-ishikawa::-webkit-scrollbar{
-    width:3px;
-    height:3px;
+    width:4px;
+    height:4px;
 }
 .slide-problema::-webkit-scrollbar-track, .slide-ishikawa::-webkit-scrollbar-track {
     margin-left: 30%;
@@ -391,7 +395,14 @@ p{
 @keyframes dark-to-light{
     from{color:--dark-blue;}
     to{color:--light-blue;}
+
 }
+@supports not (hover) {
+    .button-slide-problem, .button-slide-ishikawa{
+        display: none;
+    }
+  }
+
 
 @media screen and (min-width: 1366px){
     header{
@@ -408,6 +419,7 @@ p{
         width: 100vw;
         padding-left: 25%;
         padding-right: 25%;
+        outline:none;
     }
     nav{
         margin-left: 25%;
@@ -460,7 +472,7 @@ p{
         position: relative;
         padding-right: 33%;
         padding-left: 33%;
-        padding-top:0;
+        padding-top:10%;
         width:100%;
     }
     #img-problema-2{
@@ -590,8 +602,8 @@ p{
         animation-direction: normal;
     }
     .slide-problema::-webkit-scrollbar , .slide-ishikawa::-webkit-scrollbar{
-        width:5px;
-        height:5px;
+        width:7px;
+        height:7px;
     }
     .slide-problema::-webkit-scrollbar-track, .slide-ishikawa::-webkit-scrollbar-track {
         margin-left: 35%;
@@ -652,8 +664,3 @@ p{
     font-style: normal;
 }
 
-@supports (hover) {
-    .button-slide-problem{
-        display: none;
-    }
-  }
