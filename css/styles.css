@@ -17,6 +17,14 @@ body {
     padding:0;
     box-sizing: border-box;
 }
+
+video{
+    margin-top:25px;
+    width: 50vw;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 hr{
     margin: 0px 30% 0px 30%;
     border-width: 3pt;
