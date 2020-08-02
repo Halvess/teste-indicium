@@ -464,6 +464,7 @@ p{
     }
     .slide-problema{
         position:relative;
+        scroll-snap-type: none;
     }
     .slide-problema .texto-paragrafo{
         margin:0;
@@ -542,8 +543,11 @@ p{
         height: auto;
         position: relative;
     }
+    .slide-ishikawa{
+        margin-bottom: 50px ;
+    }
     .slide-ishikawa p{
-        margin-left:0;
+        margin:0;
         text-align: left;
     }
     #slide-ishikawa-1, #slide-ishikawa-2,
@@ -551,6 +555,9 @@ p{
         width: 100%;
         padding-left: 33%;
         padding-right:33%;
+    }
+    #slide-ishikawa-1{
+        padding-top:10%
     }
     .img-conteudo-ishikawa{
         padding-top:5%;
@@ -602,8 +609,8 @@ p{
         animation-direction: normal;
     }
     .slide-problema::-webkit-scrollbar , .slide-ishikawa::-webkit-scrollbar{
-        width:7px;
-        height:7px;
+        width:10px;
+        height:10px;
     }
     .slide-problema::-webkit-scrollbar-track, .slide-ishikawa::-webkit-scrollbar-track {
         margin-left: 35%;
