@@ -397,11 +397,7 @@ p{
     to{color:--light-blue;}
 
 }
-@supports not (hover) {
-    .button-slide-problem, .button-slide-ishikawa{
-        display: none;
-    }
-  }
+
 
 
 @media screen and (min-width: 1366px){
@@ -627,6 +623,7 @@ p{
     }
 }
 
+
 /* --------------------------------------------- FONTS */
 @font-face{
     font-family: Raleway;
@@ -669,4 +666,10 @@ p{
     font-weight: 900;
     font-style: normal;
 }
+
+@supports not (hover) {
+    .button-slide-problem, .button-slide-ishikawa{
+        display: none;
+    }
+  }
 
