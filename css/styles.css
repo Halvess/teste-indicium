@@ -464,7 +464,6 @@ p{
     }
     .slide-problema{
         position:relative;
-        scroll-snap-type: none;
     }
     .slide-problema .texto-paragrafo{
         margin:0;
