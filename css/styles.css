@@ -401,6 +401,9 @@ p{
     h2{
         font-size: 30pt;
     }
+    h2:hover{
+        color:white;
+    }
     section{
         width: 100vw;
     }
