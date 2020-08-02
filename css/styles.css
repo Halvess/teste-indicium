@@ -1,3 +1,4 @@
+
 :root{
     --dark-blue: #24126a;
     --light-blue: #42e8e0;
@@ -8,7 +9,9 @@ strong{
 html{
     scroll-behavior: smooth;
 }
-
+body {
+    overflow-x: hidden;
+    }
 *{
     margin:0;
     padding:0;
@@ -102,6 +105,7 @@ h3{
     color: var(--dark-blue);
 }
 h3 span { 
+    width: 30px;
     margin-top: 5pt;      
     display: block; 
   }
@@ -136,6 +140,10 @@ h5{
     transform: translateY(-75px);
 }
 
+#slide-back{
+    display: none;
+}
+
 
 p{
     font-family: Raleway;
@@ -149,16 +157,18 @@ p{
 }
 .slide-problema{
     display: flex;
-    overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-align: start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     width: 100vw;
     height: max-content;
     margin-left: auto;
     margin-right: auto;
     flex-shrink: 0;
 }
+
 .slide-problema > div {
     scroll-snap-align: start;
 }
@@ -198,7 +208,7 @@ p{
     margin-bottom:25px;
 }
 
-.button-slide-problem{
+.button-slide-problem, .button-slide-ishikawa{
     font-family: Raleway;
     font-size: 18pt;
     font-weight: 600;
@@ -329,6 +339,25 @@ p{
     height: 50vh;
 }
 
+.slide-problema::-webkit-scrollbar , .slide-ishikawa::-webkit-scrollbar{
+    width:3px;
+    height:3px;
+}
+.slide-problema::-webkit-scrollbar-track, .slide-ishikawa::-webkit-scrollbar-track {
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #42e8e083;
+}
+.slide-problema::-webkit-scrollbar-thumb, .slide-ishikawa::-webkit-scrollbar-thumb {
+    background: var(--dark-blue);
+    border-radius: 20px;
+}
+.slide-problema::-webkit-scrollbar-thumb:hover, .slide-ishikawa::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(rgba(38, 0, 255, 0.575), green, blue, alpha);
+}
+
 
 /* ------------------------------------ ANIMATIONS */
 @keyframes light-to-dark{
@@ -356,8 +385,10 @@ p{
     to{color:--light-blue;}
 }
 
-
-@media screen and (max-width: 1366px){
+@media screen and (min-width: 1366px){
+    header{
+        height:768px;
+    }
     h1{
         top:15%;
         margin-left: 25%;
@@ -374,25 +405,29 @@ p{
         width: 100vw;
     }
     h3{
-        font-size: 56pt;
+        font-size: 48pt;
         margin-left:25%;
         margin-bottom: 30px;
     }
-    .button-slide-problem{
+    h3 span{
+        height:30px;
+    }
+    .button-slide-problem , .button-slide-ishikawa{
         width: 75px;
         height: 75px;
         font-size:18pt;
         border-width: 2pt;
         margin: 30px 10px 10px 10px;
     }
-    .button-slide-problem:hover{
+    .button-slide-problem:hover, .button-slide-ishikawa:hover{
         background: var(--light-blue);
         color: white;
     }
     .texto-paragrafo{
-        font-size:18pt;
+        font-size:14pt;
         margin-left: 25%;
-        margin-right: 20%;
+        margin-right: 25%;
+        line-height: 21pt;
     }
     .slider-problema{
         margin-top:30px;
@@ -408,17 +443,20 @@ p{
         position: relative;
         padding-right: 33%;
         padding-left: 33%;
-        padding-top: 10%;
+        padding-top:0;
+        width:100%;
     }
     #img-problema-2{
         position: relative;
         padding-right: 33%;
         padding-left: 33%;
+        width:100%;
     }
     #img-problema-3{
         position: relative;
         padding-right: 33%;
         padding-left: 33%;
+        width:100%;
     }
     .img-slide{
         width: 30vw;
@@ -434,6 +472,9 @@ p{
         transform: translateY(-170px);
         font-size: 45pt;
     }
+    #txt-cinco-porques:hover{
+        color:var(--dark-blue)
+    }
     #ishikawa{
         height: fit-content;
     }
@@ -441,12 +482,19 @@ p{
         transform: translateY(-195px);
         font-size: 36pt;
     }
+    #txt-ishikawa:hover{
+        color:var(--dark-blue);
+    }
     #fluxograma{
         height:fit-content;
     }
     #txt-fluxogramas{
         transform: translateY(-150px);
         font-size: 36pt;
+    }
+
+    #txt-fluxogramas:hover{
+        color: var(--dark-blue);
     }
     h4{
         z-index: -1;
@@ -461,22 +509,26 @@ p{
         margin-left:25%;
     }
     .img-conteudo-ishikawa{
-        width: 50vw;
+        width: 35vw;
         height: auto;
         position: relative;
     }
+    .slide-ishikawa p{
+        margin-left:0;
+        text-align: left;
+    }
     #slide-ishikawa-1, #slide-ishikawa-2,
     #slide-ishikawa-3, #slide-ishikawa-4 {
-        padding-left: 25%;
-        padding-right:25%;
-        height:fit-content;
+        width: 100%;
+        padding-left: 33%;
+        padding-right:33%;
     }
     .img-conteudo-ishikawa{
         padding-top:5%;
         padding-bottom: 5%;
     }
     .img-conteudo-fluxograma{
-        width: 60vw;
+        width: 30vw;
         height:auto;
         margin-top:50px;
         margin-bottom: 20px;
@@ -485,6 +537,18 @@ p{
         width: 20vw;
         height: 80vh;
     }
+    .slide-problema::-webkit-scrollbar-track {
+        width: 100vw;
+        margin-left: 35%;
+        margin-right: 35%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background-color: #42e8e083;
+    }
+    .slide-problema::-webkit-scrollbar-thumb {
+        background: var(--dark-blue);
+        border-radius: 20px;
+    }
     #logo{
         width: 10vw;
         margin-left: auto;
@@ -492,21 +556,38 @@ p{
         margin-top:20px;
         margin-bottom:10px;
     }
-    .slide-problema::-webkit-scrollbar {
+    #download-pdf{
+        text-align: center;
+        border: solid;
+        border-radius: 15px;
+        border-width: 1.5pt;
+        border-color: var(--light-blue);
+        width: 15vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #download-pdf:hover{
+        animation-name: fade-background;
+        animation-duration: 0.6s;
+        animation-direction: normal;
+    }
+    .slide-problema::-webkit-scrollbar , .slide-ishikawa::-webkit-scrollbar{
         width:5px;
         height:5px;
     }
-    .slide-problema::-webkit-scrollbar-track {
-        margin-left: 40%;
-        margin-right: 40%;
+    .slide-problema::-webkit-scrollbar-track, .slide-ishikawa::-webkit-scrollbar-track {
+        margin-left: 35%;
+        margin-right: 35%;
+        border-radius: 20px;
         margin-bottom: 20px;
         background-color: #42e8e083;
     }
-    .slide-problema::-webkit-scrollbar-thumb {
+    .slide-problema::-webkit-scrollbar-thumb, .slide-ishikawa::-webkit-scrollbar-thumb {
         background: var(--dark-blue);
-        border-radius: 10px;
+        border-radius: 20px;
     }
-    .slide-problema::-webkit-scrollbar-thumb:hover {
+    .slide-problema::-webkit-scrollbar-thumb:hover, .slide-ishikawa::-webkit-scrollbar-thumb:hover {
         background-color: rgba(rgba(38, 0, 255, 0.575), green, blue, alpha);
     }
 }
@@ -553,3 +634,9 @@ p{
     font-weight: 900;
     font-style: normal;
 }
+
+@supports (hover) {
+    .button-slide-problem{
+        display: none;
+    }
+  }

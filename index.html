@@ -20,7 +20,7 @@
             <h3 ><span id="sobre-problemas">&nbsp;</span> 
                 SOBRE<br>PROBLEMAS</h3>
             <div class="slider-problema">    
-                <div class="slide-problema">
+                <div class="slide-problema" id ="scroller-problema">
                     <div id="img-problema-1">
                         <img class="img-slide" alt="imagem explicando o tópico" src="imgs/teste-1@3x.png">
                         <p class ="texto-paragrafo">
@@ -40,11 +40,13 @@
                         </p>
                     </div>
                 </div>
-            </div>
                 <div style="text-align: center;">
-                    <a class="button-slide-problem" href="#img-problema-1">&lt;</a>
-                    <a class="button-slide-problem" href="#img-problema-2">&gt;</a>
+                    <a id ="button-1" class="button-slide-problem" href="#img-problema-1" onClick="highLight('button-1')">1</a>
+                    <a id ="button-2" class="button-slide-problem" href="#img-problema-2" onClick="highLight('button-2')">2</a>
+                    <a id ="button-3"class="button-slide-problem" href="#img-problema-3" onClick="highLight('button-3')">3</a>
                 </div>
+            </div>
+
             </div>
         </section>
  
@@ -160,10 +162,10 @@
                     </div>
                 </div>
                 <div style="text-align: center;">
-                    <a class="button-slide-problem" href="#slide-ishikawa-1">1</a>
-                    <a class="button-slide-problem" href="#slide-ishikawa-2">2</a>
-                    <a class="button-slide-problem" href="#slide-ishikawa-3">3</a>
-                    <a class="button-slide-problem" href="#slide-ishikawa-4">4</a>
+                    <a id="button-ishikawa-1" class="button-slide-ishikawa" href="#slide-ishikawa-1" onclick="highLight_ishikawa('button-ishikawa-1')">1</a>
+                    <a id="button-ishikawa-2" class="button-slide-ishikawa" href="#slide-ishikawa-2" onclick="highLight_ishikawa('button-ishikawa-2')">2</a>
+                    <a id="button-ishikawa-3" class="button-slide-ishikawa" href="#slide-ishikawa-3" onclick="highLight_ishikawa('button-ishikawa-3')">3</a>
+                    <a id="button-ishikawa-4" class="button-slide-ishikawa" href="#slide-ishikawa-4" onclick="highLight_ishikawa('button-ishikawa-4')">4</a>
                 </div>
                <br>
                 <p class="texto-paragrafo">
